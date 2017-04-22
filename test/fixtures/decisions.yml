@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  decision_text: MyText
+
+two:
+  location: MyString
+  decision_text: MyText
