@@ -1,0 +1,2 @@
+class DecisionGroup < ApplicationRecord
+end
