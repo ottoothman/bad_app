@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170422172108) do
+ActiveRecord::Schema.define(version: 20170425003551) do
 
-  create_table "decision_group", id: false, force: :cascade do |t|
+  create_table "decision_groups", id: false, force: :cascade do |t|
     t.integer "user_id"
     t.integer "decision_id"
-    t.index ["decision_id", "user_id"], name: "index_decision_group_on_decision_id_and_user_id", unique: true
-    t.index ["user_id", "decision_id"], name: "index_decision_group_on_user_id_and_decision_id", unique: true
+    t.index ["decision_id", "user_id"], name: "index_decision_groups_on_decision_id_and_user_id", unique: true
+    t.index ["user_id", "decision_id"], name: "index_decision_groups_on_user_id_and_decision_id", unique: true
   end
 
   create_table "decisions", force: :cascade do |t|

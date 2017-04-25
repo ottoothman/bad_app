@@ -10,6 +10,10 @@
   <%= @decision.decision_text %>
 </p>
 
+<% @decision.members.each do |u| %>
+<%= u.email %>
+<% end %>
+
 <%= link_to 'Edit', edit_decision_path(@decision) %> |
 <%= link_to 'Back', decisions_path %>
-<%= button_to 'Join', group_path %>
+<%= button_to 'Join', group_path, params: {:user_id => current_user.id, :decision_id=> @decision.id} %>
